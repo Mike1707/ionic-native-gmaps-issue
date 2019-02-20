@@ -4,6 +4,25 @@
       Tab Three
     </ion-title>
   </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="segment">
+      <ion-segment-button checked value="segment1">
+        Segment1
+      </ion-segment-button>
+      <ion-segment-button value="segment2">
+        Segment2
+      </ion-segment-button>
+      <ion-segment-button value="segment3">
+        Segment3
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <app-segment1 *ngIf="segment=='segment1'"></app-segment1>
+  <app-segment2 *ngIf="segment=='segment2'"></app-segment2>
+  <app-segment3 *ngIf="segment=='segment3'"></app-segment3>
+</ion-content>
