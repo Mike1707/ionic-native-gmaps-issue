@@ -1,6 +1,6 @@
 # @ionic-native/google-maps@5.0.xxx Background coloring issue
 
-This project shows the background coloring issue.
+This project shows the background coloring issue. Description see here: https://github.com/ionic-team/ionic-native-google-maps/issues/179
 
 
 ## Before using this demo...
